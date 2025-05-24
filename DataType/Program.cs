@@ -42,7 +42,7 @@ namespace DataType
              *  
              */
             //programm to display short int min,max and range
-            short a = 32767;
+            short a = 500;
             Console.WriteLine("value of a is {0}", a);
             Console.WriteLine("short minimum value is {0}", short.MinValue);//-32768
             Console.WriteLine("short maximum value is {0} ", short.MaxValue);//32767
@@ -50,6 +50,38 @@ namespace DataType
             Console.WriteLine("unsigned short max value is  {0}", ushort.MaxValue);//65535
             Console.WriteLine("size of short is {0}bytes", sizeof(short));
             Console.WriteLine("base type of short is  {0}", a.GetType());
+
+            //varibale once declared cannot be used rather we can create a new one
+            //varibales are of 3 types.
+            /*
+             * 1)local varible
+             * 2)instance varible
+             * 3)static varible
+             * 
+             * local varible:
+             * local varible is used to call when ever needed with in the method or a function so
+             * the scope of the varible is to that block or function.
+             * local varibles should be initialized with some value or assign some value.
+             */
+            int b=2147483647;
+            Console.WriteLine(b);
+            Console.WriteLine("int minimum value is {0}",int.MinValue);//-2147483648
+            Console.WriteLine("int maximum value is {0}",int.MaxValue);// 2147483647
+            Console.WriteLine("unsigned int minimum value is {0}",uint.MinValue);//0
+            Console.WriteLine("unsigned int maximum value is {0}",uint.MaxValue);// 4294967295
+            Console.WriteLine("size of int is {0} bytes",sizeof(int));//4 bytes
+            Console.WriteLine("base type of int is {0}", b.GetType());
+
+            long c = 214748364845465465;
+            Console.WriteLine(c);
+            Console.WriteLine("long minimum value is {0}", long.MinValue);//-9223372036854775808
+            Console.WriteLine("long maximum value is {0}",long.MaxValue);//  9223372036854775807
+            Console.WriteLine("unsigned long minimum value is {0}",ulong.MinValue);//0
+            Console.WriteLine("unsigned long maximum value is {0}",ulong.MaxValue);//184467441073709551615
+            Console.WriteLine("size of long is {0} bytes", sizeof(long));//8
+            Console.WriteLine("base type of long is {0}", c.GetType());
+
+
         }
     }
 }
